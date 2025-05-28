@@ -10,8 +10,11 @@ a python script to crawl your reddit user information using the reddit api with 
 2. [🔐 credentials setup](#credentials-setup-)
 3. [🔑 get reddit api credentials](#get-reddit-api-credentials-)
 4. [💻 usage](#usage-)
-   4.1 [📁 output files](#output-files-)
-   4.2 [📋 file structure ](#json-file-structure-)
+
+   4.0 [📁 output files](#output-files-)
+
+   4.1 [📋 file structure ](#json-file-structure-)
+
 5. [🛠️ development](#development-️)
 6. [🔒 security Notes](#security-notes-)
 7. [⚠️ limitations](#limitations-️)
@@ -25,19 +28,19 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ## 1. 🚀 setup with `uv`
 
-1. install [uv](https://docs.astral.sh/uv/):
+1.0 install [uv](https://docs.astral.sh/uv/)
    ```bash
    curl -lssf https://astral.sh/uv/install.sh | sh
    ```
 
-2. initialize the project:
+1.1 initialize the project
    ```bash
    mkdir reddit-crawler && cd reddit-crawler
    ```
 
-3. create `pyproject.toml` and save the script as `reddit_crawler.py`.
+1.2 create `pyproject.toml` and save the script as `reddit_crawler.py`
 
-4. install dependencies:
+1.3 install dependencies
    ```bash
    uv sync
    ```
@@ -68,7 +71,6 @@ run the script once to generate `secrets.json` template, then update it:
 
 **important:** add `secrets.json` to `.gitignore` to keep credentials secure.
 
----
 
 ## 3. 🔑 get reddit api credentials
 1. go [here](https://www.reddit.com/prefs/apps).
@@ -85,7 +87,7 @@ after installing all the dependencies using `uv`:
 uv run reddit_crawler.py
 ```
 
-### 4.1 📁 output files
+### 4.0 📁 output files
 
 all data is saved to the `reddit_data/` directory:
 
@@ -101,7 +103,7 @@ each file includes:
 - data type identifier
 - structured data with metadata
 
-### 4.2 📋 output `json` file structure
+### 4.1 📋 output `json` file structure
 
 ```json
 {
@@ -121,18 +123,18 @@ each file includes:
 
 ## 🛠️ 5. development
 
-### install development dependencies:
+### 5.0 install development dependencies:
 ```bash
 uv sync --group dev
 ```
 
-### format code:
+### 5.1 format code
 ```bash
 uv run black reddit_crawler.py
 uv run isort reddit_crawler.py
 ```
 
-### type checking:
+### 5.2 type checking
 ```bash
 uv run mypy reddit_crawler.py
 ```
