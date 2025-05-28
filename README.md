@@ -21,7 +21,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
    4.0 running the script
 
-   4.1 [output files](#output-files)
+   4.1 [output files](#4.1-output-files)
 
    4.2 [file structure ](#json-file-structure-)
 
