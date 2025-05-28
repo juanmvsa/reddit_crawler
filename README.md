@@ -58,7 +58,7 @@ a python script to crawl your reddit user information using the reddit api with 
 git clone https://github.com/juanmvsa/reddit_crawler
 ```
 
-### 1.2 initialize the project
+### 1.2 initialize this project
    ```bash
    cd reddit-crawler
    ```
