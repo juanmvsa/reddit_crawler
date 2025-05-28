@@ -6,15 +6,33 @@ a python script to crawl your reddit user information using the reddit api with 
 
 0. ✨ [features]({#0.-✨-features)
 1. 🚀 [setup with `uv`](#setup-with-uv-)
+
+   1.0 install
+
+   1.1 clone this repo
+
+   1.2 initialize this project
+
+   1.3 install dependencies
+
 2. 🔐 [credentials setup](#credentials-setup-)
 3. 🔑 [get reddit api credentials](#get-reddit-api-credentials-)
 4. 💻 [usage](#usage-)
 
-   4.0 📁 [output files](#output-files-)
+   4.0 running the script
 
-   4.1 📋 [file structure ](#json-file-structure-)
+   4.1 [output files](#output-files-)
+
+   4.2 [file structure ](#json-file-structure-)
 
 5. 🛠️ [development](#development-️)
+
+   5.0 install development dependencies
+
+   5.1 format code
+
+   5.2 type checking
+
 6. 🔒 [security notes](#security-notes-)
 7. ⚠️ [limitations](#limitations-️)
 
@@ -90,14 +108,14 @@ run the script once to generate `secrets.json` template, then update it:
 
 ## 4. 💻 usage
 
-#### running the script
+### 4.0 running the script
 after installing all the dependencies using `uv`:
 
 ```bash
 uv run reddit_crawler.py
 ```
 
-### 4.0 📁 output files
+### 4.1 output files
 all data is saved to the `reddit_data/` directory:
 - `user_public_info_{username}.json` - basic user information
 - `user_recent_activity_{username}.json` - recent posts and comments
@@ -111,7 +129,7 @@ each file includes:
 - data type identifier
 - structured data with metadata
 
-### 4.1 📋 output `json` file structure
+### 4.2 output `json` file structure
 
 ```json
 {
