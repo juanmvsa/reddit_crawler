@@ -6,7 +6,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ## 📚 table of contents 
 
-- 0. [✨ features](#features-)
+- 0. [✨ features]({#0.-✨-features-)
 - 1. [🚀 setup with `uv`](#setup-with-uv-)
 - 2. [🔐 credentials setup](#credentials-setup-)
 - 3. [🔑 get reddit api credentials](#get-reddit-api-credentials-)
@@ -18,8 +18,7 @@ a python script to crawl your reddit user information using the reddit api with 
 - 7. [⚠️ limitations](#limitations-️)
 
 --- 
-## 0. ✨ features {#0.-✨-features-}
-
+## 0. ✨ features
 - secure credential management via environment variables or secrets file.
 - all data saved to structured `json` files with timestamps.
 - complete user crawling with detailed activity analysis.
