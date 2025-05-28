@@ -72,15 +72,16 @@ run the script once to generate `secrets.json` template, then update it:
 **important:** add `secrets.json` to `.gitignore` to keep credentials secure.
 
 ## 3. 🔑 get reddit api credentials
-a) go [here](https://www.reddit.com/prefs/apps).
 
-b) click "create app" or "create another app".
+**a)** go [here](https://www.reddit.com/prefs/apps).
 
-c) choose "script" as the app type.
+**b)** click "create app" or "create another app".
 
-d) generate your `reddit_client_secret`.
+**c)** choose "script" as the app type.
 
-e) the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
+**d)** generate your `reddit_client_secret`.
+
+**e)** the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
 ## 4. 💻 usage
 
