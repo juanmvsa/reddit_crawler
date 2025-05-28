@@ -2,8 +2,23 @@
 
 a python script to crawl your reddit user information using the reddit api with secure credential management and `json` file storage.
 
+---
 
-## 0. features
+## 📚 table of contents 
+
+- [0. ✨ features](#features-)
+- [1. 🚀 setup with `uv`](#setup-with-uv-)
+- [2. 🔐 credentials setup](#credentials-setup-)
+- [3. 🔑 get reddit api credentials](#get-reddit-api-credentials-)
+- [4. 💻 usage](#usage-)
+- [4.1 📁 output files](#output-files-)
+- [4.2 📋 file structure ](#json-file-structure-)
+- [5. 🛠️ development](#development-️)
+- [6. 🔒 security Notes](#security-notes-)
+- [7. ⚠️ limitations](#limitations-️)
+
+--- 
+## 0. ✨ features {#features-}
 
 - secure credential management via environment variables or secrets file.
 - all data saved to structured `json` files with timestamps.
@@ -13,7 +28,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ---
 
-## 1. setup with `uv`
+## 1. 🚀 setup with `uv` {#setup-with-uv-}
 
 1. install [uv](https://docs.astral.sh/uv/):
    ```bash
@@ -34,7 +49,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ---
 
-## 2. credential setup
+## 2. 🔐 credentials setup {#credentials-setup-}
 
 ### option 1: environment variables (recommended)
 ```bash
@@ -64,8 +79,7 @@ run the script once to generate `secrets.json` template, then update it:
 
 ---
 
-## 3. get reddit api credentials
-
+## 3. 🔑 get reddit api credentials {#get-reddit-api-credentials-}
 1. go [here](https://www.reddit.com/prefs/apps).
 2. click "create app" or "create another app".
 3. choose "script" as the app type.
@@ -75,7 +89,7 @@ run the script once to generate `secrets.json` template, then update it:
 
 ---
 
-## 4. usage
+## 4. 💻 usage {#usage-}
 
 after installing all the dependencies using `uv`:
 
@@ -83,7 +97,7 @@ after installing all the dependencies using `uv`:
 uv run python reddit_crawler.py
 ```
 
-### output files
+### 4.1 📁 output files {#output-files-}
 
 all data is saved to the `reddit_data/` directory:
 
@@ -99,7 +113,7 @@ each file includes:
 - data type identifier
 - structured data with metadata
 
-### output `json` file structure
+### 4.2 📋 output `json` file structure {json-file-structure-}
 
 ```json
 {
@@ -119,7 +133,7 @@ each file includes:
 
 ---
 
-## development
+## 🛠️ 5. development {#development-}
 
 install development dependencies:
 ```bash
@@ -139,7 +153,7 @@ uv run mypy reddit_crawler.py
 
 ---
 
-## security notes
+## 🔒 6. security notes {#security-notes-}
 
 - **never commit `secrets.json` to version control**
 - use environment variables in production
@@ -147,7 +161,7 @@ uv run mypy reddit_crawler.py
 
 ---
 
-## limitations
+## ⚠️ 7. limitations {#limitations-}
 
 - cannot access other users' private subscription lists
 - rate limited to respect reddit's api terms
