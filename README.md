@@ -5,15 +5,15 @@ a python script to crawl your reddit user information using the reddit api with 
 ## 📚 table of contents 
 
 0. ✨ [features](#-0.-features)
-1. 🚀 [setup with `uv`](#setup-with-uv-)
+1. 🚀 [setup with `uv`](#-1.-setup-with-uv-)
 
-   1.0 install
+   1.0 [install `uv`](#1.0-install-uv)
 
-   1.1 clone this repo
+   1.1 [clone this repo](#1.1-clone-this-repo)
 
-   1.2 initialize this project
+   1.2 [initialize this project]
 
-   1.3 install dependencies
+   1.3 [install dependencies]
 
 2. 🔐 [credentials setup](#credentials-setup-)
 3. 🔑 [get reddit api credentials](#get-reddit-api-credentials-)
