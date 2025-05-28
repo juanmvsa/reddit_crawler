@@ -1,4 +1,4 @@
-# reddit crawler with `json` storage
+# 🕷️ reddit crawler with `json` storage
 
 a python script to crawl your reddit user information using the reddit api with secure credential management and `json` file storage.
 
