@@ -2,22 +2,21 @@
 
 a python script to crawl your reddit user information using the reddit api with secure credential management and `json` file storage.
 
-
 ## 📚 table of contents 
 
-0. [✨ features]({#0.-✨-features)
-1. [🚀 setup with `uv`](#setup-with-uv-)
-2. [🔐 credentials setup](#credentials-setup-)
-3. [🔑 get reddit api credentials](#get-reddit-api-credentials-)
-4. [💻 usage](#usage-)
+0. ✨ [features]({#0.-✨-features)
+1. 🚀 [setup with `uv`](#setup-with-uv-)
+2. 🔐 [credentials setup](#credentials-setup-)
+3. 🔑 [get reddit api credentials](#get-reddit-api-credentials-)
+4. 💻 [usage](#usage-)
 
-   4.0 [📁 output files](#output-files-)
+   4.0 📁 [output files](#output-files-)
 
-   4.1 [📋 file structure ](#json-file-structure-)
+   4.1 📋 [file structure ](#json-file-structure-)
 
-5. [🛠️ development](#development-️)
-6. [🔒 security Notes](#security-notes-)
-7. [⚠️ limitations](#limitations-️)
+5. 🛠️ [development](#development-️)
+6. 🔒 [security notes](#security-notes-)
+7. ⚠️ [limitations](#limitations-️)
 
 ## 0. ✨ features
 - secure credential management via environment variables or secrets file.
@@ -28,19 +27,19 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ## 1. 🚀 setup with `uv`
 
-1.0 install [uv](https://docs.astral.sh/uv/)
+### 1.0 install [uv](https://docs.astral.sh/uv/)
    ```bash
    curl -lssf https://astral.sh/uv/install.sh | sh
    ```
 
-1.1 initialize the project
+### 1.1 initialize the project
    ```bash
    mkdir reddit-crawler && cd reddit-crawler
    ```
 
-1.2 create `pyproject.toml` and save the script as `reddit_crawler.py`
+### 1.2 create `pyproject.toml` and save the script as `reddit_crawler.py`
 
-1.3 install dependencies
+### 1.3 install dependencies
    ```bash
    uv sync
    ```
@@ -55,7 +54,6 @@ export reddit_user_agent="redditcrawler/1.0 by yourusername"
 export reddit_username="your_username"  # optional
 export reddit_password="your_password"  # optional
 ```
-
  
 ### option 2: secrets file
 run the script once to generate `secrets.json` template, then update it:
@@ -71,16 +69,16 @@ run the script once to generate `secrets.json` template, then update it:
 
 **important:** add `secrets.json` to `.gitignore` to keep credentials secure.
 
-
 ## 3. 🔑 get reddit api credentials
-1. go [here](https://www.reddit.com/prefs/apps).
-2. click "create app" or "create another app".
-3. choose "script" as the app type.
-4. generate your `reddit_client_secret`.
-5. the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
+a) go [here](https://www.reddit.com/prefs/apps).
+b) click "create app" or "create another app".
+c) choose "script" as the app type.
+d) generate your `reddit_client_secret`.
+e) the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
 ## 4. 💻 usage
 
+### running the script
 after installing all the dependencies using `uv`:
 
 ```bash
@@ -88,7 +86,6 @@ uv run reddit_crawler.py
 ```
 
 ### 4.0 📁 output files
-
 all data is saved to the `reddit_data/` directory:
 
 - `user_public_info_{username}.json` - basic user information
@@ -131,6 +128,9 @@ uv sync --group dev
 ### 5.1 format code
 ```bash
 uv run black reddit_crawler.py
+```
+
+```bash
 uv run isort reddit_crawler.py
 ```
 
@@ -141,13 +141,13 @@ uv run mypy reddit_crawler.py
 
 ## 🔒 6. security notes
 
-- **never commit `secrets.json` to version control**
-- use environment variables in production
-- the script respects reddit's rate limits
+- **never commit `secrets.json` to version control.**
+- use environment variables in production.
+- the script respects reddit's rate limits.
 
 ## ⚠️ 7. limitations
 
-- cannot access other users' private subscription lists
-- rate limited to respect reddit's api terms
-- requires reddit api credentials
-- some data may be unavailable for private/suspended accounts
+- cannot access other users' private subscription lists.
+- rate limited to respect reddit's api terms.
+- requires reddit api credentials.
+- some data may be unavailable for private/suspended accounts.
