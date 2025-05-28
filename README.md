@@ -171,13 +171,13 @@ uv run isort reddit_crawler.py
 uv run mypy reddit_crawler.py
 ```
 
-## 🔒 6. security notes
+## 6. 🔒 security notes
 
 - **never commit `secrets.json` to version control.**
 - use environment variables in production.
 - the script respects reddit's rate limits.
 
-## ⚠️ 7. limitations
+## 7. ⚠️ limitations
 
 - cannot access other users' private subscription lists.
 - rate limited to respect reddit's api terms.
