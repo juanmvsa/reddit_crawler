@@ -178,7 +178,7 @@ uv run mypy reddit_crawler.py
 - use environment variables in production.
 - the script respects reddit's rate limits.
 
-## ⚠️ limitations
+## ⚠️ 7. limitations
 
 - cannot access other users' private subscription lists.
 - rate limited to respect reddit's api terms.
