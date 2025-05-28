@@ -28,7 +28,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
    4.2 [output `json` file structure ](#4.2-output-json-file-structure)
 
-5. 🛠️ [development](#-5.-development)
+🛠️ [5. development](#-5.-development)
 
    5.0 [install development dependencies](#5.0-install-development-dependencies)
 
@@ -36,8 +36,9 @@ a python script to crawl your reddit user information using the reddit api with 
 
    5.2 [type checking](#5.2-type-checking)
 
-6. 🔒 [security notes](#-6.-security-notes)
-7. ⚠️ [limitations](#-7.-limitations)
+🔒 [6. security notes](#-6.-security-notes)
+
+⚠️ [7. limitations](#-7.-limitations)
 
 ## ✨ 0. features
 - secure credential management via environment variables or secrets file.
