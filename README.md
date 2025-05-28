@@ -6,7 +6,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ✨ [0. features](#-0.-features)
 
-🚀 [1.1 setup with `uv`](#-1.-setup-with-uv-)
+🚀 [1. setup with `uv`](#-1.-setup-with-uv)
 
    [1.0 install `uv`](#1.0-install-uv)
 
@@ -22,11 +22,11 @@ a python script to crawl your reddit user information using the reddit api with 
 
 💻 [4. usage](#-4.-usage)
 
-   4.0 running the script
+   4.0 [running the script](#4.0-running-the-script)
 
    4.1 [output files](#4.1-output-files)
 
-   4.2 [file structure ](#json-file-structure-)
+   4.2 [file structure ](#4.2-file-structure-)
 
 5. 🛠️ [development](#development-️)
 
@@ -46,7 +46,7 @@ a python script to crawl your reddit user information using the reddit api with 
 - support for personal data retrieval (subscriptions, friends).
 - rate limiting and error handling.
 
-## 1. 🚀 setup with `uv`
+## 🚀 1. setup with `uv`
 
 ### 1.0 install [uv](https://docs.astral.sh/uv/)
    ```bash
@@ -72,7 +72,7 @@ uv init
    uv sync
    ```
 
-## 2. 🔐 credentials setup
+## 🔐 2. credentials setup
 
 #### option 1: environment variables (recommended)
 ```bash
@@ -97,7 +97,7 @@ run the script once to generate `secrets.json` template, then update it:
 
 **important:** add `secrets.json` to `.gitignore` to keep credentials secure.
 
-## 3. 🔑 get reddit api credentials
+## 🔑 3. get reddit api credentials
 
 **a)** go [here](https://www.reddit.com/prefs/apps).
 
@@ -109,7 +109,7 @@ run the script once to generate `secrets.json` template, then update it:
 
 **e)** the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
-## 4. 💻 usage
+## 💻 4. usage
 
 ### 4.0 running the script
 after installing all the dependencies using `uv`:
