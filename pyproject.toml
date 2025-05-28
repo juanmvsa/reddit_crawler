@@ -1,7 +1,7 @@
 [project]
 name = "reddit-crawler"
 version = "0.1.0"
-description = "A Python script to crawl Reddit user information with JSON storage"
+description = "a python script to crawl your reddit user information with json storage"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
@@ -17,7 +17,7 @@ dev = [
 ]
 
 [project.scripts]
-reddit-crawler = "reddit_crawler:crawler"
+reddit-crawler = "crawler:crawler"
 
 [build-system]
 requires = ["hatchling"]
