@@ -1,4 +1,4 @@
-# 🕷️ reddit crawler with `json` storage
+# reddit crawler with `json` storage
 
 a python script to crawl your reddit user information using the reddit api with secure credential management and `json` file storage.
 
@@ -32,14 +32,19 @@ a python script to crawl your reddit user information using the reddit api with 
    curl -lssf https://astral.sh/uv/install.sh | sh
    ```
 
-### 1.1 initialize the project
+### 1.1 clone this repo
+```bash
+git clone https://github.com/juanmvsa/reddit_crawler
+```
+
+### 1.2 initialize the project
    ```bash
-   mkdir reddit-crawler && cd reddit-crawler
+   cd reddit-crawler
    ```
 
-### 1.2 project requirements
-
-create the `pyproject.toml` and save the script as `reddit_crawler.py`
+```bash
+uv init
+```
 
 ### 1.3 install dependencies
    ```bash
@@ -48,7 +53,7 @@ create the `pyproject.toml` and save the script as `reddit_crawler.py`
 
 ## 2. 🔐 credentials setup
 
-### option 1: environment variables (recommended)
+#### option 1: environment variables (recommended)
 ```bash
 export reddit_client_id="your_client_id"
 export reddit_client_secret="your_client_secret"
@@ -57,7 +62,7 @@ export reddit_username="your_username"  # optional
 export reddit_password="your_password"  # optional
 ```
  
-### option 2: secrets file
+#### option 2: secrets file
 run the script once to generate `secrets.json` template, then update it:
 ```json
 {
@@ -85,7 +90,7 @@ run the script once to generate `secrets.json` template, then update it:
 
 ## 4. 💻 usage
 
-### running the script
+#### running the script
 after installing all the dependencies using `uv`:
 
 ```bash
