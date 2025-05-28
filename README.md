@@ -40,6 +40,8 @@ a python script to crawl your reddit user information using the reddit api with 
 
 ⚠️ [7. limitations](#-7.-limitations)
 
+---
+
 ## ✨ 0. features
 - secure credential management via environment variables or secrets file.
 - all data saved to structured `json` files with timestamps.
