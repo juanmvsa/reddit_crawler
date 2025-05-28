@@ -2,11 +2,10 @@
 
 a python script to crawl your reddit user information using the reddit api with secure credential management and `json` file storage.
 
----
 
 ## 📚 table of contents 
 
-- 0. [✨ features]({#0.-✨-features-)
+- 0. [✨ features]({#0.-✨-features)
 - 1. [🚀 setup with `uv`](#setup-with-uv-)
 - 2. [🔐 credentials setup](#credentials-setup-)
 - 3. [🔑 get reddit api credentials](#get-reddit-api-credentials-)
@@ -17,7 +16,6 @@ a python script to crawl your reddit user information using the reddit api with 
 - 6. [🔒 security Notes](#security-notes-)
 - 7. [⚠️ limitations](#limitations-️)
 
---- 
 ## 0. ✨ features
 - secure credential management via environment variables or secrets file.
 - all data saved to structured `json` files with timestamps.
@@ -25,9 +23,7 @@ a python script to crawl your reddit user information using the reddit api with 
 - support for personal data retrieval (subscriptions, friends).
 - rate limiting and error handling.
 
----
-
-## 1. 🚀 setup with `uv` {#setup-with-uv-}
+## 1. 🚀 setup with `uv`
 
 1. install [uv](https://docs.astral.sh/uv/):
    ```bash
@@ -46,9 +42,7 @@ a python script to crawl your reddit user information using the reddit api with 
    uv sync
    ```
 
----
-
-## 2. 🔐 credentials setup {#credentials-setup-}
+## 2. 🔐 credentials setup
 
 ### option 1: environment variables (recommended)
 ```bash
@@ -58,8 +52,6 @@ export reddit_user_agent="redditcrawler/1.0 by yourusername"
 export reddit_username="your_username"  # optional
 export reddit_password="your_password"  # optional
 ```
-
-#### notes
 
  
 ### option 2: secrets file
@@ -78,25 +70,22 @@ run the script once to generate `secrets.json` template, then update it:
 
 ---
 
-## 3. 🔑 get reddit api credentials {#get-reddit-api-credentials-}
+## 3. 🔑 get reddit api credentials
 1. go [here](https://www.reddit.com/prefs/apps).
 2. click "create app" or "create another app".
 3. choose "script" as the app type.
 4. generate your `reddit_client_secret`.
 5. the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
-
----
-
-## 4. 💻 usage {#usage-}
+## 4. 💻 usage
 
 after installing all the dependencies using `uv`:
 
 ```bash
-uv run python reddit_crawler.py
+uv run reddit_crawler.py
 ```
 
-### 4.1 📁 output files {#output-files-}
+### 4.1 📁 output files
 
 all data is saved to the `reddit_data/` directory:
 
@@ -112,7 +101,7 @@ each file includes:
 - data type identifier
 - structured data with metadata
 
-### 4.2 📋 output `json` file structure {json-file-structure-}
+### 4.2 📋 output `json` file structure
 
 ```json
 {
@@ -130,37 +119,31 @@ each file includes:
 }
 ```
 
----
+## 🛠️ 5. development
 
-## 🛠️ 5. development {#development-}
-
-install development dependencies:
+### install development dependencies:
 ```bash
 uv sync --group dev
 ```
 
-format code:
+### format code:
 ```bash
 uv run black reddit_crawler.py
 uv run isort reddit_crawler.py
 ```
 
-type checking:
+### type checking:
 ```bash
 uv run mypy reddit_crawler.py
 ```
 
----
-
-## 🔒 6. security notes {#security-notes-}
+## 🔒 6. security notes
 
 - **never commit `secrets.json` to version control**
 - use environment variables in production
 - the script respects reddit's rate limits
 
----
-
-## ⚠️ 7. limitations {#limitations-}
+## ⚠️ 7. limitations
 
 - cannot access other users' private subscription lists
 - rate limited to respect reddit's api terms
