@@ -37,7 +37,9 @@ a python script to crawl your reddit user information using the reddit api with 
    mkdir reddit-crawler && cd reddit-crawler
    ```
 
-### 1.2 create `pyproject.toml` and save the script as `reddit_crawler.py`
+### 1.2 project requirements
+
+create the `pyproject.toml` and save the script as `reddit_crawler.py`
 
 ### 1.3 install dependencies
    ```bash
@@ -71,9 +73,13 @@ run the script once to generate `secrets.json` template, then update it:
 
 ## 3. 🔑 get reddit api credentials
 a) go [here](https://www.reddit.com/prefs/apps).
+
 b) click "create app" or "create another app".
+
 c) choose "script" as the app type.
+
 d) generate your `reddit_client_secret`.
+
 e) the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
 ## 4. 💻 usage
@@ -87,7 +93,6 @@ uv run reddit_crawler.py
 
 ### 4.0 📁 output files
 all data is saved to the `reddit_data/` directory:
-
 - `user_public_info_{username}.json` - basic user information
 - `user_recent_activity_{username}.json` - recent posts and comments
 - `active_subreddits_{username}.json` - subreddits where user is active
@@ -120,7 +125,7 @@ each file includes:
 
 ## 🛠️ 5. development
 
-### 5.0 install development dependencies:
+### 5.0 install development dependencies
 ```bash
 uv sync --group dev
 ```
