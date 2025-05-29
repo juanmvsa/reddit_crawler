@@ -77,6 +77,8 @@ uv init
    uv sync
    ```
 
+[*back to table of contents*](#-table-of-contents)
+
 ## 🔐 2. credentials setup
 
 #### option 1: environment variables (recommended)
@@ -113,6 +115,8 @@ run the script once to generate `secrets.json` template, then update it:
 **d)** generate your `reddit_client_secret`.
 
 **e)** the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
+
+[*back to table of contents*](#-table-of-contents)
 
 ## 🪄 4. usage
 
@@ -155,6 +159,8 @@ each file includes:
 }
 ```
 
+[*back to table of contents*](#-table-of-contents)
+
 ## 👩🏿‍💻 5. development
 
 ### 5.0 install development dependencies
@@ -176,11 +182,15 @@ uv run isort reddit_crawler.py
 uv run mypy reddit_crawler.py
 ```
 
+[*back to table of contents*](#-table-of-contents)
+
 ## 🔒 6. security notes
 
 - **never commit `secrets.json` to version control.**
 - use environment variables in production.
 - the script respects reddit's rate limits.
+
+[*back to table of contents*](#-table-of-contents)
 
 ## 🚫 7. limitations
 
@@ -188,3 +198,5 @@ uv run mypy reddit_crawler.py
 - rate limited to respect reddit's api terms.
 - requires reddit api credentials.
 - some data may be unavailable for private/suspended accounts.
+
+  [*back to table of contents*](#-table-of-contents)
