@@ -8,13 +8,13 @@ a python script to crawl your reddit user information using the reddit api with 
 
 🚀 [1. setup with `uv`](#-1.-setup-with-uv)
 
-   ├── [1.0 install `uv`](#1.0-install-uv)
+   🚀 [1.0 install `uv`](#1.0-install-uv)
 
-   [1.1 clone this repo](#1.1-clone-this-repo)
+   🚀 [1.1 clone this repo](#1.1-clone-this-repo)
 
-   [1.2 initialize this project](#1.2-initialize-this-project)
-├── 
-└── [1.3 install dependencies](#1.3-install-dependencies)
+   🚀 [1.2 initialize this project](#1.2-initialize-this-project)
+
+   🚀 [1.3 install dependencies](#1.3-install-dependencies)
 
 🔐 [2. credentials setup](#-2.-credentials-setup)
 
@@ -22,19 +22,19 @@ a python script to crawl your reddit user information using the reddit api with 
 
 🪄 [4. usage](#-4.-usage)
 
-   4.0 [running the script](#4.0-running-the-script)
+🪄 [4.0 running the script](#4.0-running-the-script)
 
-   4.1 [output files](#4.1-output-files)
+   🪄 [4.1 output files](#4.1-output-files)
 
-   4.2 [output `json` file structure ](#4.2-output-json-file-structure)
+   🪄 [4.2 output `json` file structure ](#4.2-output-json-file-structure)
 
 👩🏿‍💻 [5. development](#-5.-development)
 
-   5.0 [install development dependencies](#5.0-install-development-dependencies)
+   👩🏿‍💻 [5.0 install development dependencies](#5.0-install-development-dependencies)
 
-   5.1 [format code](#5.1-format-code)
+   👩🏿‍💻 [5.1 format code](#5.1-format-code)
 
-   5.2 [type checking](#5.2-type-checking)
+   👩🏿‍💻 [5.2 type checking](#5.2-type-checking)
 
 🔒 [6. security notes](#-6.-security-notes)
 
