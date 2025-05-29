@@ -49,6 +49,8 @@ a python script to crawl your reddit user information using the reddit api with 
 - support for personal data retrieval (subscriptions, friends).
 - rate limiting and error handling.
 
+[*back to table of contents*](#-table-of-contents)
+
 ## 🚀 1. setup with `uv`
 
 ### 1.0 install [uv](https://docs.astral.sh/uv/)
