@@ -28,7 +28,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
    4.2 [output `json` file structure ](#4.2-output-json-file-structure)
 
-🛠️ [5. development](#5.-development)
+🛠️ [5. development](#-5.-development)
 
    5.0 [install development dependencies](#5.0-install-development-dependencies)
 
@@ -154,7 +154,7 @@ each file includes:
 ```
 
 
-## 🛠️ 5. development
+## ⚒️ 5. development
 
 ### 5.0 install development dependencies
 ```bash
