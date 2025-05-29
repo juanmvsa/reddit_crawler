@@ -28,7 +28,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
    4.2 [output `json` file structure ](#4.2-output-json-file-structure)
 
-🛠️ [5. development](#-5.-development)
+👩🏿‍💻 [5. development](#-5.-development)
 
    5.0 [install development dependencies](#5.0-install-development-dependencies)
 
@@ -180,7 +180,7 @@ uv run mypy reddit_crawler.py
 - use environment variables in production.
 - the script respects reddit's rate limits.
 
-## ⚠️ 7. limitations
+## 🚫 7. limitations
 
 - cannot access other users' private subscription lists.
 - rate limited to respect reddit's api terms.
