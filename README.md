@@ -104,6 +104,8 @@ run the script once to generate `secrets.json` template, then update it:
 
 **important:** add `secrets.json` to `.gitignore` to keep credentials secure.
 
+[*back to table of contents*](#-table-of-contents)
+
 ## 🔑 3. get reddit api credentials
 
 **a)** go [here](https://www.reddit.com/prefs/apps).
