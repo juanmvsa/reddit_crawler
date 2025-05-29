@@ -7,6 +7,7 @@ a python script to crawl your reddit user information using the reddit api with 
 ✨ [0. features](#-0.-features)
 
 🚀 [1. setup with `uv`](#-1.-setup-with-uv)
+
       [1.0 install `uv`](#1.0-install-uv)
 
    [1.1 clone this repo](#1.1-clone-this-repo)
