@@ -20,7 +20,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
 🔑 [3. get reddit api credentials](#-3.-get-reddit-api-credentials)
 
-💻 [4. usage](#-4.-usage)
+🪄 [4. usage](#-4.-usage)
 
    4.0 [running the script](#4.0-running-the-script)
 
@@ -38,7 +38,7 @@ a python script to crawl your reddit user information using the reddit api with 
 
 🔒 [6. security notes](#-6.-security-notes)
 
-⚠️ [7. limitations](#-7.-limitations)
+⛔️ [7. limitations](#-7.-limitations)
 
 ---
 
@@ -112,7 +112,7 @@ run the script once to generate `secrets.json` template, then update it:
 
 **e)** the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
-## 💻 4. usage
+## 🪄 4. usage
 
 ### 4.0 running the script
 after installing all the dependencies using `uv`:
