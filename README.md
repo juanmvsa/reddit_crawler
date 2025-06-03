@@ -154,5 +154,3 @@ uv run mypy reddit_crawler.py
 - rate limited to respect reddit's api terms.
 - requires reddit api credentials.
 - some data may be unavailable for private/suspended accounts.
-
-  [*back to table of contents*](#-table-of-contents)
