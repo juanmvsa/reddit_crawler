@@ -2,44 +2,6 @@
 
 a python script to crawl your reddit user information using the reddit api with secure credential management and `json` file storage.
 
-## 📚 table of contents 
-
-✨ [0. features](#0.-features)
-
-🚀 [1. setup with `uv`](#-1.-setup-with-uv)
-
-   🚀 [1.0 install `uv`](#1.0-install-uv)
-
-   🚀 [1.1 clone this repo](#1.1-clone-this-repo)
-
-   🚀 [1.2 initialize this project](#1.2-initialize-this-project)
-
-   🚀 [1.3 install dependencies](#1.3-install-dependencies)
-
-🔐 [2. credentials setup](#-2.-credentials-setup)
-
-🔑 [3. get reddit api credentials](#-3.-get-reddit-api-credentials)
-
-🪄 [4. usage](#-4.-usage)
-
-🪄 [4.0 running the script](#4.0-running-the-script)
-
-   🪄 [4.1 output files](#4.1-output-files)
-
-   🪄 [4.2 output `json` file structure ](#4.2-output-json-file-structure)
-
-👩🏿‍💻 [5. development](#-5.-development)
-
-   👩🏿‍💻 [5.0 install development dependencies](#5.0-install-development-dependencies)
-
-   👩🏿‍💻 [5.1 format code](#5.1-format-code)
-
-   👩🏿‍💻 [5.2 type checking](#5.2-type-checking)
-
-🔒 [6. security notes](#-6.-security-notes)
-
-⛔️ [7. limitations](#-7.-limitations)
-
 ---
 
 ## ✨ 0. features
@@ -49,7 +11,7 @@ a python script to crawl your reddit user information using the reddit api with 
 - support for personal data retrieval (subscriptions, friends).
 - rate limiting and error handling.
 
-[*back to table of contents*](#-table-of-contents)
+
 
 ## 🚀 1. setup with `uv`
 
@@ -77,7 +39,6 @@ uv init
    uv sync
    ```
 
-[*back to table of contents*](#-table-of-contents)
 
 ## 🔐 2. credentials setup
 
@@ -104,7 +65,6 @@ run the script once to generate `secrets.json` template, then update it:
 
 **important:** add `secrets.json` to `.gitignore` to keep credentials secure.
 
-[*back to table of contents*](#-table-of-contents)
 
 ## 🔑 3. get reddit api credentials
 
@@ -118,7 +78,6 @@ run the script once to generate `secrets.json` template, then update it:
 
 **e)** the `client_id` is emailed to the account associated to your reddit account, once you have generated your `reddit_client_secret`.
 
-[*back to table of contents*](#-table-of-contents)
 
 ## 🪄 4. usage
 
@@ -161,8 +120,6 @@ each file includes:
 }
 ```
 
-[*back to table of contents*](#-table-of-contents)
-
 ## 👩🏿‍💻 5. development
 
 ### 5.0 install development dependencies
@@ -184,15 +141,12 @@ uv run isort reddit_crawler.py
 uv run mypy reddit_crawler.py
 ```
 
-[*back to table of contents*](#-table-of-contents)
-
 ## 🔒 6. security notes
 
 - **never commit `secrets.json` to version control.**
 - use environment variables in production.
 - the script respects reddit's rate limits.
 
-[*back to table of contents*](#-table-of-contents)
 
 ## 🚫 7. limitations
 
